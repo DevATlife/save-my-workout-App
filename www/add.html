@@ -1,0 +1,103 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Add Workout</div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="add" class="page">
+        <div class="page-content">
+            <div class="content-block">
+ <!----------------------------------------------------------------------->              
+  <form id="workout-form" class="ajax-submit">
+<div class="list-block">  <!-----extra been add to fix the form ------>
+  <ul>
+    <!----------------name of workout ----->   
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">Title</div>
+          <div class="item-input">
+       
+            <input type="text"  placeholder="workout title" id="title">
+          </div>
+        </div>
+      </div>
+    </li>
+      
+  <!----------------date of workout ----->   
+   <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">Date</div>
+          <div class="item-input">
+            <input type="date" placeholder="workout Date" id="date">
+          </div>
+        </div>
+      </div>
+    </li>  
+      
+    <!----------------Type of workout smart selector----->   
+     <li>
+      <a href="#" class="item-link smart-select">
+        <!-- select -->
+        <select name="type" id="type">
+          <option value="Machine Weight">Machine Weight</option>
+          <option value="Free Weight">Free Weight</option>    
+          <option value="Running or jogging">Running or jogging</option>
+          <option value="Stretch">Stretch</option>
+          <option value="Resistance band">Resistance band</option>
+        </select>
+        <div class="item-content">
+          <div class="item-inner">
+            <!-- Select label -->
+            <div class="item-title">Workout Type</div>
+            <!-- Selected value, not required prefilled -->
+            <div class="item-after">Machine Weight</div>
+          </div>
+        </div>
+      </a>
+    </li>
+      
+    <!----------------Length of workout ----->   
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">Length</div>
+          <div class="item-input">
+            <!-- Make sure that input have "name attrobute" -->
+            <input type="number"  placeholder="Length in sec" id="length">
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+    
+<br>
+
+<div class="row">
+     
+  <input type="submit" value="save" class="button active jbtn">
+   
+    </div>
+       
+</div> <!--------------end of item-content div -----> 
+ 
+
+</form>              
+<!---------------------------------------------------------------------------->                
+            </div>
+        </div>
+    </div>
+</div>
